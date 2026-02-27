@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CORSINI Marketing Workspace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand-block">
+          <div class="brand-mark">C</div>
+          <div>
+            <h1>CORSINI</h1>
+            <p>Marketing Workspace</p>
+          </div>
+        </div>
+
+        <button class="mobile-close" id="closeSidebar" aria-label="Close menu">✕</button>
+
+        <nav>
+          <button class="nav-link active" data-section="dashboard">Dashboard</button>
+          <button class="nav-link" data-section="announcements">Announcements</button>
+          <button class="nav-link" data-section="tasks">Tasks</button>
+          <button class="nav-link" data-section="schedule">Schedule</button>
+          <button class="nav-link" data-section="strategy">Strategy</button>
+          <button class="nav-link" data-section="performance">Performance</button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <p>Role</p>
+          <select id="roleSelector" aria-label="Select user role">
+            <option>Admin</option>
+            <option>Marketing Manager</option>
+            <option>Marketing Staff</option>
+          </select>
+        </div>
+      </aside>
+
+      <div class="main-area">
+        <header class="topbar">
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+          <div>
+            <h2 id="pageTitle">Dashboard</h2>
+            <p id="roleStatus">Signed in as Admin</p>
+          </div>
+          <button class="primary-action">+ New Update</button>
+        </header>
+
+        <main class="content">
+          <section class="section-view active" id="dashboard">
+            <div class="grid-cards">
+              <article class="card stat">
+                <h3>Active Campaigns</h3>
+                <p class="value">12</p>
+                <span class="trend up">+2 this week</span>
+              </article>
+              <article class="card stat">
+                <h3>Pending Tasks</h3>
+                <p class="value">27</p>
+                <span class="trend down">5 overdue</span>
+              </article>
+              <article class="card stat">
+                <h3>Announcements</h3>
+                <p class="value">4</p>
+                <span class="trend up">1 new today</span>
+              </article>
+              <article class="card stat">
+                <h3>Team Performance</h3>
+                <p class="value">89%</p>
+                <span class="trend up">+6% monthly</span>
+              </article>
+            </div>
+
+            <div class="grid-wide">
+              <article class="card">
+                <h3>Today’s Priorities</h3>
+                <ul class="checklist">
+                  <li>Launch product teaser email</li>
+                  <li>Review paid social budget</li>
+                  <li>Approve Q3 content calendar</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Quick Calendar</h3>
+                <table>
+                  <thead>
+                    <tr><th>Time</th><th>Event</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>09:30</td><td>Campaign stand-up</td></tr>
+                    <tr><td>11:00</td><td>Manager review</td></tr>
+                    <tr><td>15:30</td><td>Content planning</td></tr>
+                  </tbody>
+                </table>
+              </article>
+            </div>
+          </section>
+
+          <section class="section-view" id="announcements">
+            <article class="card">
+              <h3>Team Announcements</h3>
+              <table>
+                <thead>
+                  <tr><th>Date</th><th>Title</th><th>Owner</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Feb 26</td><td>Brand guideline update</td><td>Admin</td><td><span class="pill">Published</span></td></tr>
+                  <tr><td>Feb 24</td><td>Lead scoring change</td><td>Manager</td><td><span class="pill">Published</span></td></tr>
+                  <tr><td>Feb 22</td><td>Office photo day</td><td>HR</td><td><span class="pill">Draft</span></td></tr>
+                </tbody>
+              </table>
+            </article>
+          </section>
+
+          <section class="section-view" id="tasks">
+            <article class="card">
+              <h3>Task Board</h3>
+              <table>
+                <thead>
+                  <tr><th>Task</th><th>Assigned To</th><th>Due</th><th>Priority</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Ad creative review</td><td>Jessica</td><td>Feb 28</td><td>High</td></tr>
+                  <tr><td>SEO keyword refresh</td><td>Amir</td><td>Mar 2</td><td>Medium</td></tr>
+                  <tr><td>Newsletter draft</td><td>Elena</td><td>Mar 4</td><td>Low</td></tr>
+                </tbody>
+              </table>
+            </article>
+          </section>
+
+          <section class="section-view" id="schedule">
+            <article class="card">
+              <h3>Marketing Schedule</h3>
+              <table>
+                <thead>
+                  <tr><th>Week</th><th>Activity</th><th>Channel</th><th>Owner</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>W1</td><td>Spring launch campaign</td><td>Email + Social</td><td>Manager</td></tr>
+                  <tr><td>W2</td><td>Webinar promotion</td><td>Paid Ads</td><td>Admin</td></tr>
+                  <tr><td>W3</td><td>Case study publish</td><td>Website</td><td>Staff</td></tr>
+                </tbody>
+              </table>
+            </article>
+          </section>
+
+          <section class="section-view" id="strategy">
+            <article class="card">
+              <h3>Current Strategy Focus</h3>
+              <div class="strategy-grid">
+                <div>
+                  <h4>Acquisition</h4>
+                  <p>Increase inbound leads by improving conversion-focused landing pages.</p>
+                </div>
+                <div>
+                  <h4>Retention</h4>
+                  <p>Improve repeat engagement through segmented lifecycle campaigns.</p>
+                </div>
+                <div>
+                  <h4>Brand Growth</h4>
+                  <p>Expand visibility with thought leadership and partner co-marketing.</p>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="section-view" id="performance">
+            <article class="card">
+              <h3>Employee Performance Snapshot</h3>
+              <table>
+                <thead>
+                  <tr><th>Name</th><th>Role</th><th>Target Completion</th><th>Score</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Jessica Rivera</td><td>Manager</td><td>94%</td><td>Excellent</td></tr>
+                  <tr><td>Amir Khan</td><td>Staff</td><td>87%</td><td>Strong</td></tr>
+                  <tr><td>Elena Costa</td><td>Staff</td><td>82%</td><td>On Track</td></tr>
+                </tbody>
+              </table>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
